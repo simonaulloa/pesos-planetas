@@ -19,4 +19,11 @@
     }
     peso_final = parseInt(peso_final);
     document.write("tu peso en marte es <strong>" + peso_final + " kilos</strong>");
-    </script>
+    
+
+function calcularPeso(){// desde aqui parte el codigo de anisen
+    var peso=document.getElementById("peso").value;
+    var division=peso/9.78;
+    var resultado="Mercurio: "+(division*3.7 ).toFixed(2)+"\nVenus: "+(division*8.87).toFixed(2)+"\nMartes: "+(division*3.711).toFixed(2)+"\nJupiter: "+(division*24.79).toFixed(2)+"\nSaturno: "+(division*10.44).toFixed(2)+"\nUrano: "+(division*8.86).toFixed(2)+"\nNeptuno: "+(division*11.09).toFixed(2)+"\nPluton(planeta enano): "+(division*0.6).toFixed(2);
+    alert(resultado);
+}//aqui termina anisen
